@@ -40,12 +40,12 @@ function syncCharacterAmount(e) {
   characterAmountRange.value = value
 }
 
-form.addEventListener('submit', e => {e.preventDefault
+generateBtn.addEventListener('click', e => {e.preventDefault
   const characterAmount = characterAmountNumber.value
-  const includeUppercase = includeUppercase.checked
-  const includeLowercase = includeLowercase.checked
-  const includeNumeric = includeNumeric.checked
-  const includeSpecial = includeSpecial.checked
+  const includeUppercase = includeUppercaseElement.checked
+  const includeLowercase = includeLowercaseElement.checked
+  const includeNumeric = includeNumericElement.checked
+  const includeSpecial = includeSpecialElement.checked
   const password = generatePassword(characterAmount, includeUppercase, includeLowercase, includeNumeric, includeSpecial)
 })
 
