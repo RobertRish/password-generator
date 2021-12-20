@@ -57,10 +57,16 @@ function generatePassword(characterAmount, includeUppercase, includeNumeric, inc
 
   const passwordCharacters = []
   for (i = 0; i < characterAmount; i++) {
-    const characterCode = charCodes[Math.floor(Math.random() * charCodes.length)]
+    let characterCode = charCodes[Math.floor(Math.random() * charCodes.length)]
     passwordCharacters.push(String.fromCharCode(characterCode))
+    let temppass= document.querySelector("#password")
+    let finalPass = passwordCharacters.join('')
+    // finalPass = passwordCharacters[i].split(','); 
+
+    console.log('pass', finalPass)
+   temppass.value =finalPass
   }
-  return passwordCharacters.join('')
+  
 }
 
 function arrayFromLowToHigh(low, high) {
