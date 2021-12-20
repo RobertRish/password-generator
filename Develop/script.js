@@ -56,7 +56,7 @@ function generatePassword(characterAmount, includeUppercase, includeNumeric, inc
   if (includeSpecial) charCodes = charCodes.concat(SpecialCharCodes)
 
   const passwordCharacters = []
-  for (let i = 0, i < characterAmount, i++) {
+  for (i = 0; i < characterAmount; i++) {
     const characterCode = charCodes[Math.floor(Math.random() * charCodes.length)]
     passwordCharacters.push(String.fromCharCode(characterCode))
   }
@@ -71,5 +71,4 @@ function arrayFromLowToHigh(low, high) {
   return array
 }
 
-//if I need to stop password generator button from refreshing page: 16
 
