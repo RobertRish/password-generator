@@ -71,6 +71,16 @@ header {
   display: block;
   clear: both;
 }
+/*added this
+.form {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 1rem;
+  column-gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+*/
 
 .btn {
   border: none;
