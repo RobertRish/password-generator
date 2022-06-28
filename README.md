@@ -18,7 +18,7 @@ Generates random, cryptic passwords with settings to specify how many characters
 
 ## Screenshots
 
-![screenshot](Screen Shot 2022-06-28 at 7.57.52 AM.png)
+![screenshot](./screenshot.png)
 
 ## License
 
